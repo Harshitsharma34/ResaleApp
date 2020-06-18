@@ -1,0 +1,22 @@
+{% extends "base2.html" %}
+{% load bootstrap4 %}
+{% block body %}
+  <div class="submit-ad main-grid-border">
+		<div class="container">
+			<h2 class="head">Post an Ad</h2>
+			<div class="post-ad-form">
+				<form method="POST" enctype="multipart/form-data">
+					{% csrf_token %}
+					{% bootstrap_form form %}
+					{% buttons %}
+					   <p class="post-terms">By clicking <strong>post Button</strong> you accept our <a href="terms.html" target="_blank">Terms of Use </a> and <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+                       <input type="submit" class="btn btn-primary" value="Post">
+					{% endbuttons %}
+					<div class="clearfix"></div>
+					</form>
+					</div>
+			</div>
+        </div>	
+        	
+	</div>
+{% endblock body %}

@@ -1,0 +1,20 @@
+{% extends "base2.html" %}
+{% load bootstrap4 %}
+
+{% block body %}
+<section>
+    <div id="page-wrapper" class="sign-in-wrapper">
+        <div class="graphs">
+            <div class="sign-in-form">
+                <div class="sign-in-form-top">
+                    <h1>You've been logged out. Click to Log in Again</h1>
+                </div>
+            
+             <a type="submit" class="btn btn-primary" href="{% url 'login'%}">Log In Again</a>
+            </div>
+        </div>
+    </div>
+    <!--footer section start-->
+</section>
+
+{% endblock body %}
